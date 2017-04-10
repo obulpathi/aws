@@ -18,7 +18,7 @@ dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
 
 table = dynamodb.Table('test-table')
 
-for i in range(100):
+for i in range(5):
     time.sleep(1)
     info = "The new stuff" + str(i)
 
